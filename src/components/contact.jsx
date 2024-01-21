@@ -1,9 +1,10 @@
 import React from './react';
+import { emailValidation } from '../../utils/emailValidation';
 
 function Contact (){
     const handleChange = (event) => {
         if (event.target.name === 'email'){
-            const valid = validateEmail(event.target.value);
+            const valid = emailValidation(event.target.value);
             if (!valid){
                 console.error('Invalid Email Address!');
             } else {

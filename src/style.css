@@ -4,3 +4,126 @@ body {
     background-color: lavenderblush;
 }
 
+.navbar {
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: blue;
+}
+
+div.navbar{
+    padding: 2em;
+    margin: 2em;
+}
+
+.navbar-item{
+    display: inline-block;
+}
+
+main {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 30em;
+    margin-right: 30em;
+}
+
+.bioPic{
+    border-radius: 20px;
+    width: 100px;
+}
+
+.label{
+    text-align: left;
+}
+
+.contactContent {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.field {
+    margin-bottom: 20px;
+}
+  
+.label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+  
+.input,
+.textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    resize: vertical;
+}
+  
+.danger {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+  
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+  
+.button:hover {
+    background-color: #0056b3;
+}
+  
+.portContent {
+    text-align: center;
+    color:#007bff;
+    margin: 2em;
+}
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.footer{
+    background-color: rgb(132, 17, 240);
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .input,
+    .textarea {
+      width: 100%;
+    }
+  }
