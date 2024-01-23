@@ -1,9 +1,5 @@
 import './app.css';
 import Header from './components/header';
-import About from './components/about';
-import Portfolio from './components/portfolio';
-import Resume from './components/resume'
-import Contact from './components/contact';
 import Footer from './components/footer';
 import {Outlet} from 'react-router-dom';
 

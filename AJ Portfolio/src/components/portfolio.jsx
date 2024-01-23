@@ -4,7 +4,7 @@ const projects = [
     {
         id: 1,
         title: "Text Editor",
-        image: './public/images/',
+        image: '/text editor-logos.png',
         description: 'An installable application that allows you to write/edit text',
         repository: 'https://github.com/aubreymlj96/Text-Editor-PWA',
         link: 'https://text-editor-2024-a603324856d7.herokuapp.com/'
@@ -12,7 +12,7 @@ const projects = [
     {
         id: 2,
         title: "Tech Blog",
-        image: './public/images/',
+        image: '/tech blog-logos.png',
         description: 'A website that allows you to post and comment on blog posts',
         repository: 'https://github.com/aubreymlj96/Tech-Blog-2023',
         link: 'https://guarded-reaches-99212-de9e4e9eb976.herokuapp.com/'
@@ -20,7 +20,7 @@ const projects = [
     {
         id: 3,
         title: "Note Taker",
-        image: './public/images/',
+        image: '/note taker-logos.png',
         description: 'A online note taker that allows you to add/edit/remove notes',
         repository: 'https://github.com/aubreymlj96/Note-Taker-Project',
         link: 'https://arcane-waters-60041-fabce6d99b88.herokuapp.com/'
@@ -28,7 +28,7 @@ const projects = [
     {
         id: 4,
         title: "Weather Dashboard",
-        image: './public/images/',
+        image: '/weather dashboard-logos.png',
         description: 'An dashboard that allows you to search and monitor weather forecasts',
         repository: 'https://github.com/aubreymlj96/Weather-Dashboard',
         link: 'https://aubreymlj96.github.io/Weather-Dashboard/'
@@ -36,7 +36,7 @@ const projects = [
     {
         id: 5,
         title: "Online Code Quiz",
-        image: './public/images/',
+        image: '/code quiz-logos.png',
         description: 'An online quiz taker with questions/prompts',
         repository: 'https://github.com/aubreymlj96/code-quiz-project',
         link: 'https://text-editor-2024-a603324856d7.herokuapp.com/'
@@ -44,7 +44,7 @@ const projects = [
     {
         id: 6,
         title: "CoinQuest",
-        image: './public/images/',
+        image: '/CoinQuest-logos.png',
         description: 'An application that allows kids to favorite toys while learning how to manage finances at the same time',
         repository: 'https://github.com/ltrokey/project2_group1',
         link: 'https://coin-quest-a86be143e8d5.herokuapp.com/'
@@ -54,14 +54,14 @@ const projects = [
 function Portfolio(){
     return (
         <div>
-            <p className='portContent'>Portfolio</p>
-            <div className='columns desktop justify-content-center flex-wrap-wrap flex-direction-row'>
+            <p className='portContent'></p>
+            <div className=''>
                 {projects.map((project, i) =>(
                     <div className='card' key= {i}>
                         <div className='card-image'>
                             <figure className='image col-m'>
                                 <a href={project.link}>
-                                    <img src={project.link + project.image} alt='Project Image'/>
+                                    <img src={project.image} alt='Project Image'/>
                                 </a>
                             </figure>
                         </div>
@@ -69,20 +69,19 @@ function Portfolio(){
                             <div className='media'>
                                 <div className='media-left'>
                                 <div className='media-content'>
-                                    <p className='title mt-4' key={project.id}>
+                                    <p className='title' key={project.id}>
                                         {project.title}
                                     </p>
                                 </div>
                                 </div>
                             </div>
-                            <div className='content'>
+                            <div className='carcontent'>
                                 {project.description}
                                 <br/>
-                                <div className='card'>
+                                <div className='repocard'>
                                     <footer className='card-footer'>
-                                        <a href={project.repository} className='card-footer-item'>Check Out the Repository!</a>
-                                        <br/>
-                                        <a href={project.link} className='card-footer-item'>Check Out the Live Site!</a>
+                                        <a href={project.repository} className='card-footer-item'>Check Out the Repository Here!</a>
+                                        <a href={project.link} className='card-footer-item'>Click Logo for Live Site!</a>
                                     </footer>
                                 </div>
                             </div>

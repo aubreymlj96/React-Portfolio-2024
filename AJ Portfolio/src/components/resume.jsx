@@ -2,7 +2,8 @@ import React from 'react';
 
 function Resume(){
     return (
-        <div className='column'>
+
+        <div className='resumeContent2'>
             <p className='resumeContent'>Resume</p>
             <br/>
             <a className='button primary' href='/public/resume.pdf'>
@@ -11,14 +12,16 @@ function Resume(){
                     <span>Download Resume</span>
                 </span>
             </a>
-            <p className='skillContent'>My Skills</p>
-            <br/>
+            <div className='skillContent'>
+            <p >My Skills</p>
             <ul>
                 <li>HTML CSS JavaScript</li>
                 <li>Webservice API JSON React</li>
                 <li>Node.js NoSQL SQL</li>
             </ul>
+            </div>
         </div>
+
     )
 }
 

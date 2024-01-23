@@ -1,129 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+
+
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    background-color: lavenderblush;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /* min-height: 100%; */
+    /* background-color: #f8f9fa; */
+    background-image: url("/5183000.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    border: solid purple 2px;
+  }
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.header {
+    background-color: lightskyblue;
+    font-family: cursive;
+    color: #fff;
+    padding: 10px;
+    border: solid purple 1px;
+    text-align: right;
+}
+  
+.header-item {
+  text-decoration: none;
+  color: #fff;
 }
 
-.navbar {
-    text-align: center;
-    display: block;
-    width: 100%;
-    background-color: blue;
+
+.tabs {
+  background-image: url("/5183000.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  border: solid blue 4px;
+  border-style: solid double dotted dashed ;
+  padding: 10px;
+  height: 60px;
+  /* width: 10000px; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-div.navbar{
-    padding: 2em;
-    margin: 2em;
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
-.navbar-item{
-    display: inline-block;
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: gray;
+  font-size: 16px;
+}
+
+.is-active {
+  background-color: #0056b3;
+  transition: ease-in-out (0.5s);
 }
 
 main {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: 30em;
-    margin-right: 30em;
+  padding: 20px;
+  /* flex: 1; */
 }
 
-.bioPic{
-    border-radius: 20px;
-    width: 100px;
+footer {
+  font-family: bold cursive;
+  font-style: italic;
+  background-color: purple;
+  text-align: center;
+  padding: 10px;
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
 }
 
-.label{
-    text-align: left;
+.footerContent {
+  font-size: 20px;
 }
 
-.contactContent {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+#logofooter {
+  height: 60px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
-  
+
+.pp-images1{
+  height: 70px;
+}
+
+.pp-images2{
+  height: 50px;
+}
+
+.aboutText {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center
+}
+
+
+.bioPic {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 150px;
+  border: solid purple 5px;
+  box-shadow: 5px 5px 10px 0px rgba(0.5, 0.5, 0.5, 0.5);   
+  /* width: 100%; */
+  max-width: 400px;
+  margin: 50px;
+}
+
+.biography {
+  display: flex;
+  max-width: 1000px;
+  border: solid purple 5px;
+  background-color: #ecece2;
+  margin-bottom: 300px;
+}
+
+.aboutText2{
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.italic {
+  font-style: italic;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.contactContent{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+}
+
 #contact-form {
-    display: flex;
-    flex-direction: column;
+  background-color: lavender;
+  padding: 20px;
+  border: solid black 2px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
 }
-  
+
 .field {
-    margin-bottom: 20px;
+  margin-bottom: 15px;
 }
-  
+
 .label {
-    font-size: 16px;
-    margin-bottom: 5px;
-    display: block;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
-  
+
 .input,
 .textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 5px;
-    resize: vertical;
-}
-  
-.danger {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-}
-  
-.button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-  
-.button:hover {
-    background-color: #0056b3;
-}
-  
-.portContent {
-    text-align: center;
-    color:#007bff;
-    margin: 2em;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
 }
 
-.card-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
+.textarea {
+  resize: vertical;
+}
+
+.button {
+  background-color: #2c81b9;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: lightblue;
+}
+
+.danger {
+  color: #e74c3c;
+  margin-top: 5px;
+}
+
+.portContent {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .card {
-    padding: 2rem;
-    border-radius: 10px;
-    border: 2px solid black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #c8e9e6;
+  margin: 20px;
+  padding: 20px;
+  border: solid purple 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
 }
 
-.footer{
-    background-color: rgb(132, 17, 240);
+.card-image {
+  flex: 1;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 1024px) {
-    main {
-      margin-top: 2em;
-      margin-bottom: 2em;
-      margin-left: 2em;
-      margin-right: 2em;
-    }
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: solid purple 5px;
+  border-radius: 20px;
 }
 
-@media screen and (max-width: 600px) {
-    .input,
-    .textarea {
-      width: 100%;
-    }
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.title {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.carcontent {
+  border: solid purple 1px;
+  border-radius: 10px;
+  background-color: #f5f5dc;
+  max-height: 100px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.description {
+  flex: 1;
+  height: 100px;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 95%;
+}
+
+.card-footer a {
+  margin-top: 10px;
+  text-align: center;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+}
+
+.resumeContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto;
+  padding: 0; */
+  text-align: center;
+  max-width: 1200px;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.resumeContent2 {
+  background-color: lavender;
+  text-align: center;
+  justify-content: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: solid purple 5px;
+  width: 50%;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.skillContent {
+  margin: 20px;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: double;
+}
+
+.column {
+  max-width: 600px;
+}
+
+.button.primary {
+  background-color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
   }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}

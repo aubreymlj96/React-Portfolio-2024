@@ -23,14 +23,17 @@ function Header(){
 
     return (
         <div>
-            <nav className='navbar'>
+            <nav className='header'>
+                <img src="./AJ Portfolio-logos_transparent2.png" alt="logo-header" id="logoheader"/>
                 <div>
-                    <a className='navbar-item' href='https://github.com/aubreymlj96?tab=repositories'>
-                        <span className='headerContent'>Aubrey Johnson</span>
+                    <a className='header-item' href='https://github.com/aubreymlj96?tab=repositories'>
+                        <span className='headerContent'></span>
                     </a>
                 </div>
             </nav>
+            <div className='nav-bar'>
             <Nav />
+            </div>
             <main>
             </main>
         </div>
