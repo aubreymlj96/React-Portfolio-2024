@@ -5,9 +5,11 @@ import {Outlet} from 'react-router-dom';
 
 function App(){
     return (
-        <div className='porfolio'>
+        <div className=''>
+        <div className='portfolio'>
             <Header />
             <Outlet/>
+        </div>
             {/* <About />
             <Portfolio />
             <Resume />

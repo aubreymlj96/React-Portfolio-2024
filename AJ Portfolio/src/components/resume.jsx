@@ -4,6 +4,7 @@ function Resume(){
     return (
 
         <div className='resumeContent2'>
+            <div className='resumeContent3'>
             <p className='resumeContent'>Resume</p>
             <br/>
             <a className='button primary' href='/Resume - 3.25.22.pdf'>
@@ -25,6 +26,7 @@ function Resume(){
                 <li>GitBash GitHub Heroku Render Insomnia</li>
                 <li> Apollo Sandbox Compass</li>
             </ul>
+            </div>
             </div>
         </div>
 

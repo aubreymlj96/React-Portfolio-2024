@@ -53,7 +53,7 @@ const projects = [
 
 function Portfolio(){
     return (
-        <div>
+        <div className='portContent2'>
             <p className='portContent'></p>
             <div className=''>
                 {projects.map((project, i) =>(
@@ -69,9 +69,9 @@ function Portfolio(){
                             <div className='media'>
                                 <div className='media-left'>
                                 <div className='media-content'>
-                                    <p className='title' key={project.id}>
+                                    {/* <p className='title' key={project.id}>
                                         {project.title}
-                                    </p>
+                                    </p> */}
                                 </div>
                                 </div>
                             </div>

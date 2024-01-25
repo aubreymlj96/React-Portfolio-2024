@@ -34,7 +34,7 @@ function Contact (){
 function handleSubmit(){};
 
     return (
-        <div>
+        <div className="contact1">
             <p className='contactContent'>Contact Me!</p>
             <form id='contact-form' onSubmit={handleSubmit}>
                 <div className='field'>
