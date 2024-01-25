@@ -19,11 +19,11 @@ const projects = [
     },
     {
         id: 3,
-        title: "Note Taker",
-        image: '/note taker-logos.png',
-        description: 'A online note taker that allows you to add/edit/remove notes',
-        repository: 'https://github.com/aubreymlj96/Note-Taker-Project',
-        link: 'https://arcane-waters-60041-fabce6d99b88.herokuapp.com/'
+        title: "Hitch-hiker's Guide: Travel App",
+        image: '/Hitch Hikers Guide-logos.png',
+        description: 'A travel planning based application that helps travels look up flights and plan trips',
+        repository: 'https://github.com/chilejay7/Hitchhiker-s-Guide-Travel-App-',
+        link: 'https://chilejay7.github.io/Hitchhiker-s-Guide-Travel-App-/'
     },
     {
         id: 4,
