@@ -320,14 +320,6 @@ form {
 }
 
 .resumeContent2 {
-  /* background-color: lavender;
-  text-align: center;
-  justify-content: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  border: solid purple 5px;
-  width: 50%;
-  border-radius: 20px;
-  margin: 0 auto; */
   padding-bottom: 240px;
 }
 
@@ -337,7 +329,7 @@ form {
   justify-content: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   border: solid purple 5px;
-  width: 20%;
+  width: 30%;
   border-radius: 20px;
   margin: 0 auto;
 }
