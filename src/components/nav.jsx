@@ -11,7 +11,7 @@ function Nav(props){
                     {props.currentPage === tab ? "nav-item is-active" : "nav-item"}
                     key={tab}
                     >
-                    <Link to = {tab} className={props.currentPage === tab ? "nav-link is-active" : "nav-link"}>{tab}</Link>
+                    <Link to =  {tab} className={props.currentPage === tab ? "nav-link is-active" : "nav-link"}>{tab}</Link>
                     </li>
                 ))}
             </ul>
